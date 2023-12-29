@@ -6,6 +6,7 @@ declare module "react-native-http-bridge-refurbished" {
             requestId: string;
             postData?: {};
             type: string;
+            headers?: Record<string, string>;
             url: string;
         }) => void
     ): void;
@@ -23,6 +24,7 @@ declare module "react-native-http-bridge-refurbished" {
         requestId: string;
         postData?: {};
         type: string;
+        headers?: Record<string, string>;
         url: string;
     };
 
@@ -30,6 +32,7 @@ declare module "react-native-http-bridge-refurbished" {
         public readonly requestId: string;
         public readonly postData?: {};
         public readonly type: string;
+        public readonly headers?: Record<string, string>;
         public readonly url: string;
 
         constructor(rawRequest: RawRequest);

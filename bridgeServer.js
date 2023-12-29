@@ -7,6 +7,7 @@ class Request {
     this.requestId = rawRequest.requestId;
     this.postData = rawRequest.postData;
     this.type = rawRequest.type;
+    this.headers = rawRequest.headers;
     this.url = rawRequest.url;
   }
   get data() {
